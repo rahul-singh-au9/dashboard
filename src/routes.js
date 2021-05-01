@@ -1,9 +1,9 @@
 import { Navigate } from 'react-router-dom';
-import DashboardLayout from 'src/components/DashboardLayout';
-import MainLayout from 'src/components/MainLayout';
-import CustomerList from 'src/pages/CustomerList';
-import Dashboard from 'src/pages/Dashboard';
-import NotFound from 'src/pages/NotFound';
+import DashboardLayout from './components/DashboardLayout';
+import MainLayout from './components/MainLayout';
+import CustomerList from './pages/CustomerList';
+import Dashboard from './pages/Dashboard';
+import NotFound from './pages/NotFound';
 
 const routes = [
   {

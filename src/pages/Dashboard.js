@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet';
 import { Box, Container, Grid } from '@material-ui/core';
-import LatestOrders from 'src/components/dashboard//LatestOrders';
-import Sales from 'src/components/dashboard//Sales';
-import Tasks from 'src/components/dashboard//Tasks';
+import LatestOrders from '../components/dashboard/LatestOrders';
+import Sales from '../components/dashboard/Sales';
+import Tasks from '../components/dashboard/Tasks';
 
 const Dashboard = () => (
   <>
