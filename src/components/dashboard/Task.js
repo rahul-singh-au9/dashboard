@@ -5,7 +5,7 @@ import {
   CardContent,
   Divider,
 } from '@material-ui/core';
-import TaskCard from '../account/AccountProfile';
+import TaskCard from '../account/TaskCard';
 import TaskHeader from './TaskHeader';
 
 const Task = (props) => (
@@ -14,7 +14,7 @@ const Task = (props) => (
       <CardContent>
         <Box
           sx={{
-            height: 890,
+            height: 891,
             position: 'relative'
           }}
         >
