@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/jsx-wrap-multilines */
 import { Doughnut } from 'react-chartjs-2';
 import {
   Box,
@@ -79,11 +81,11 @@ const Tasks = (props) => {
   return (
     <Card {...props}>
       <CardHeader
-        action={(
+        action={
           <Button endIcon={<ArrowDropDownIcon />} size="small" variant="text">
             this month
           </Button>
-        )}
+        }
         title="Tasks"
       />
       <Divider />
@@ -94,6 +96,23 @@ const Tasks = (props) => {
             position: 'relative'
           }}
         >
+          <div
+            style={{
+              width: '100%',
+              height: '40px',
+              position: 'absolute',
+              top: '50%',
+              left: 0,
+              marginTop: '-20px',
+              lineHeight: '19px',
+              textAlign: 'center',
+              zIndex: 999999999999999,
+              color: 'green',
+              fontSize: '50px'
+            }}
+          >
+            60%
+          </div>
           <Doughnut data={data} options={options} />
         </Box>
         <Box
@@ -118,8 +137,7 @@ const Tasks = (props) => {
                 {title}
               </Typography>
               <Typography style={{ color }} variant="h2">
-                {value}
-                %
+                {value}%
               </Typography>
             </Box>
           ))}
