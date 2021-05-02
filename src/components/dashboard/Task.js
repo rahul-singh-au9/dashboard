@@ -6,6 +6,7 @@ import {
   Divider,
 } from '@material-ui/core';
 import TaskCard from '../account/AccountProfile';
+import TaskHeader from './TaskHeader';
 
 const Task = (props) => (
   <div>
@@ -13,13 +14,18 @@ const Task = (props) => (
       <CardContent>
         <Box
           sx={{
-            height: 875,
+            height: 890,
             position: 'relative'
           }}
         >
+          <TaskHeader />
+          <br />
           <TaskCard />
+          <br />
           <TaskCard />
+          <br />
           <TaskCard />
+          <br />
           <TaskCard />
         </Box>
       </CardContent>

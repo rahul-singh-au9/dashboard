@@ -84,7 +84,7 @@ const Tasks = (props) => {
             this month
           </Button>
         )}
-        title="Deals"
+        title="Tasks"
       />
       <Divider />
       <CardContent>

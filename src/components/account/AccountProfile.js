@@ -12,7 +12,7 @@ import {
 const user = {
   avatar: '/static/images/avatars/avatar_1.png',
   jobTitle: 'Senior Developer',
-  name: 'Katarina Smith',
+  name: 'John Smith',
 };
 
 const AccountProfile = (props) => (
@@ -44,7 +44,10 @@ const AccountProfile = (props) => (
         <Typography color="textPrimary" gutterBottom variant="body2">
           {user.name}
         </Typography>
-        <Button variant="outlined" style={{ marginLeft: '80%', maxWidth: '100px', color: 'green' }}>
+        <Button
+          variant="outlined"
+          style={{ marginLeft: '80%', maxWidth: '100px', color: 'green' }}
+        >
           completed
         </Button>
       </Box>

@@ -103,7 +103,7 @@ const Sales = (props) => {
       <CardContent>
         <Box
           sx={{
-            height: 300,
+            height: 315,
             position: 'relative'
           }}
         >
