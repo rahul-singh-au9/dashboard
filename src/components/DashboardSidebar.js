@@ -8,7 +8,9 @@ import {
   Drawer,
   Hidden,
   List,
-  Typography
+  Typography,
+  // IconButton,
+  Button
 } from '@material-ui/core';
 import {
   BarChart as BarChartIcon,
@@ -19,6 +21,7 @@ import {
   BookOpen as BookOpenIcon,
   Users as UsersIcon
 } from 'react-feather';
+// import MenuIcon from '@material-ui/icons/Menu';
 import NavItem from './NavItem';
 
 const user = {
@@ -62,10 +65,11 @@ const items = [
     href: '/app/settings',
     icon: SettingsIcon,
     title: 'Settings'
-  },
+  }
 ];
 
-const DashboardSidebar = ({ onMobileClose, openMobile }) => {
+// eslint-disable-next-line react/prop-types
+const DashboardSidebar = ({ onMobileClose, openMobile, onMobileNavOpen }) => {
   const location = useLocation();
 
   useEffect(() => {
@@ -121,6 +125,22 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
         </List>
       </Box>
       <Box sx={{ flexGrow: 1 }} />
+
+      <Box
+        sx={{
+          backgroundColor: 'background.default',
+          m: 2,
+          p: 2
+        }}
+      >
+        <Button
+          color="primary"
+          variant="contained"
+          onClick={onMobileNavOpen}
+        >
+          Toggle Sidebar
+        </Button>
+      </Box>
     </Box>
   );
 

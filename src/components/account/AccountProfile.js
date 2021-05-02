@@ -44,10 +44,7 @@ const AccountProfile = (props) => (
         <Typography color="textPrimary" gutterBottom variant="body2">
           {user.name}
         </Typography>
-        <Button
-          variant="outlined"
-          style={{ marginLeft: '80%', maxWidth: '100px', color: 'green' }}
-        >
+        <Button variant="outlined" style={{ marginLeft: '80%', maxWidth: '100px', color: 'green' }}>
           completed
         </Button>
       </Box>

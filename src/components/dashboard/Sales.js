@@ -1,4 +1,4 @@
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import {
   Box,
   Button,
@@ -17,17 +17,12 @@ const Sales = (props) => {
   const data = {
     datasets: [
       {
-        backgroundColor: colors.indigo[500],
-        data: [50, 100, 170, 60, 146, 200],
+        backgroundColor: colors.lightBlue[200],
+        data: [50, 100, 110, 170, 60, 146, 200],
         label: 'This year'
-      },
-      {
-        backgroundColor: colors.grey[200],
-        data: [40, 70, 180, 70, 100, 250],
-        label: 'Last year'
       }
     ],
-    labels: ['1 Dec', '8 Dec', '16 Dec', '25 Dec', '31 Dec']
+    labels: ['1 Dec', '8 Dec', '16 Dec', '25 Dec', '31 Dec', '8 jan']
   };
 
   const options = {
@@ -40,9 +35,9 @@ const Sales = (props) => {
     scales: {
       xAxes: [
         {
-          barThickness: 12,
-          maxBarThickness: 10,
-          barPercentage: 0.5,
+          lineThickness: 12,
+          maxLineThickness: 10,
+          linePercentage: 0.5,
           categoryPercentage: 0.5,
           ticks: {
             fontColor: theme.palette.text.secondary
@@ -107,7 +102,7 @@ const Sales = (props) => {
             position: 'relative'
           }}
         >
-          <Bar
+          <Line
             data={data}
             options={options}
           />
