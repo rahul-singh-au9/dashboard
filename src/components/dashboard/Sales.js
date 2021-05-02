@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-wrap-multilines */
 import { Line } from 'react-chartjs-2';
 import {
   Box,
@@ -83,15 +84,11 @@ const Sales = (props) => {
   return (
     <Card {...props}>
       <CardHeader
-        action={(
-          <Button
-            endIcon={<ArrowDropDownIcon />}
-            size="small"
-            variant="text"
-          >
+        action={
+          <Button endIcon={<ArrowDropDownIcon />} size="small" variant="text">
             show monthly
           </Button>
-        )}
+        }
         title="Deals"
       />
       <Divider />
@@ -102,10 +99,7 @@ const Sales = (props) => {
             position: 'relative'
           }}
         >
-          <Line
-            data={data}
-            options={options}
-          />
+          <Line data={data} options={options} />
         </Box>
       </CardContent>
       <Divider />

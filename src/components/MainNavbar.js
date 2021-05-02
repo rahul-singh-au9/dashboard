@@ -7,7 +7,7 @@ const MainNavbar = (props) => (
     elevation={0}
     {...props}
   >
-    <Toolbar sx={{ height: 64 }}>
+    <Toolbar sx={{ height: 60 }}>
       <RouterLink to="/">
         <Logo />
       </RouterLink>
